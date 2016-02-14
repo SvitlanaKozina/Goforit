@@ -3,10 +3,21 @@
 	padding: 0;
 }
 
+.block01 {
+	position: relative;
+	width: 3000px;
+	height: 1500px;
+	background: #D8D8D8;
+}
+
 .block1 {
+	position: absolute;
+		top: 15px;
+		left: 15px;
 	width: 1362px;
 	height: 947px;
 	background: #FAFAFA;
+	box-shadow: 10px 10px 5px 0px  #999999;
 }
 
 .block2 {
@@ -23,13 +34,15 @@
 }
 
 .content2 {
-	padding-left: 40px;
-	padding-right: 40px;
-	width: 965px;
+	width: 974px;
+	height: 40px;
+	margin: auto;
+	background: #585858;
 }
 
 .content3 {
 	clear: both;
+	height: 580px;
 	padding: 40px;
 	padding-bottom: 63px;
 }
@@ -48,11 +61,15 @@
 	float: right;
 	width: 647px;
 	padding-left: 40px;
+	color: #585858;
 }
 
 .content4 {
 	clear: both;
-	padding: 63px 40px 40px 40px;
+	width: 974px;
+	height: 40px;
+	margin: auto;
+	background: #E6E6E6;
 }
 
 .logo {
@@ -69,23 +86,50 @@
 
 .menutop li{
 	list-style: none;
-	float: left;
-	background: gray;
+	background: #585858;
 	color: white;
-	padding: 2px 30px 2px 5px;
+	display: inline-block;
+	padding: 10px 70px 10px 20px;
 }
 
 .menugoods li {
 	list-style: none;
 	border: 1px solid #E6E6E6;
 	width: 233px;
-	padding: 2px 30px 2px 5px;
+	height: 30px;
+	color: #585858;
+	padding-left: 20px;
+	padding-top: 13px;
 }
 
 .menubottom li{
 	list-style: none;
 	float: left;
 	background: #E6E6E6;
-	color: black;
-	padding: 2px 30px 2px 5px;
+	color: #585858;
+	padding: 10px 81px 5px 20px;
+}
+
+ul.menutop li:hover {
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #2E2E2E;
+	background: #2E2E2E;
+}
+
+ul.menugoods li:hover {
+	background: #E6E6E6;
+	padding-left: 40px;
+	width: 213px;
+}
+
+ul.menubottom li:nth-child(2) {
+	text-decoration: underline;
+}
+
+.content4 p {
+	float: right;
+	color: #585858;
+	padding-right: 20px;
+	padding-top: 10px;
 }
