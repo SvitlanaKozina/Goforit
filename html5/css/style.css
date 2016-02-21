@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.greybox1 {
+	width: 7000px;
+	height: 3000px;
+	position: relative;
+	background: #D8D8D8;
+}
+
+.bluebox2 {
+	width: 1278px;
+	height: 1058px;
+	position: absolute;
+		top: 15px;
+		left: 15px;
+	background: url('../img/back1.png');
+	box-shadow: 10px 10px 5px 0px  #999999;
+}
+
+.zero {
+	width: 998px;
+	height: 980px;
+	background: white;
+    overflow: hidden;
+	position: absolute;
+		top: 43px;
+		left: 145px;
+    font-family: arial, sans-serif;
+	}
+	
+.shapka {
+	margin-top: 2px;
+}
+
+.s1 {
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+.s2 {
+    float: left;
+    padding-left: 30px;
+}
+
+.s3 {
+    clear: right;
+    float: right;
+    padding-top: 10px;
+    padding-right: 30px; 
+}
+.kartinka {
+    clear: both;
+    width: 998px;
+    height: 240px;
+    background: url("../img/foto1.jpg");
+    background-size: cover;
+}
+
+.menu1 {
+	width: 100%;
+	background: #2E2E2E;
+	color: white;
+}
+
+.osnova {
+    clear: both;
+	width: 998px;
+    color: #2E2E2E;
+}
+
+.leftColumn {
+    width: 20%;
+    float: left;
+    background: #E6E6E6;
+    padding: 20px 20px 20000px 20px;
+    margin-bottom: -20000px;
+}
+
+.centerColumn {
+    float: left;
+    background: #ffffff;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.rightColumn {
+	width: 20%;
+    float: right;
+    background: #E6E6E6;
+    padding: 20px 20px 20000px 20px;
+    margin-bottom: -20000px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    line-height: 30px;
+}
+
+ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px 30px 10px 35px;
+    color: white;
+    background-color: #2E2E2E;
+    text-decoration: none;
+}
+
+.tr:after {
+  content: '';
+  position: absolute;
+    top: 18px;
+    right: 15px;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: white #2E2E2E #2E2E2E #2E2E2E;
+}
+
+ul.menu > li > a:hover {
+    background-color: #2E2E2E;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 180px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #2E2E2E;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px 30px 10px 32px;
+    color: white;
+    background-color: #2E2E2E;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
