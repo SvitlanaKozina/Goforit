@@ -2,7 +2,6 @@
     margin: auto;
     padding: 0;
 }
-
 .box1 {
     width: 1215px;
     height: 1064px;
@@ -13,13 +12,11 @@
     font-family: 'Helvetica neue';
     color: white;
 }
-
 .menu1 {
     width: 1215px;
     background: #354d8b;
     line-height: 30px;
 }
-
 .menu1 li{
     list-style: none;
     background: none;
@@ -27,75 +24,61 @@
     display: inline-block;
     padding: 10px 50px 10px 40px;
 }
-
 li:nth-child(5) {
     border-right: 1px solid #317fc7;
 }
-
 li:nth-child(6) {
     position: relative;
     color: white;
     padding-left: 40px;
 }
-
 li:nth-child(7) {
     color: white;
     background: #317fc7;
 }
-
 li:nth-child(6):before {
     content: url('../img/fl.png');
     position: absolute;
     top: 10px;
     left: 5px;
 }
-
 li:nth-child(1):hover {
     color: white;
     background: #317fc7;  
 }
-
 li:nth-child(2):hover {
     color: white;
     background: #317fc7;  
 }
-
 li:nth-child(3):hover {
     color: white;
     background: #317fc7;  
 }
-
 li:nth-child(4):hover {
     color: white;
     background: #317fc7;  
 }
-
 li:nth-child(5):hover {
     color: white;
     background: #317fc7;  
 }
-
 .menu1 a {
     color: white;
 }
-
 .cad {
     height: 53px;
     margin-top: 10px;
     border-bottom: 2px solid white;
-    text-align: center;
     font-size: 30px;
     line-height: 53px;
+    text-align: center;
 }
-
 .facebook {
     margin-top: 40px;
 }
-
 .ou {
     margin-top: 30px;
 }
-
 .boxform1 {
     width: 557px;
     height: 611px;
@@ -105,54 +88,46 @@ li:nth-child(5):hover {
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
 }
-
 .boxform1_1 {
     height: 340px;
     margin-top: 10px;
 }
-
 .inp {
-    background: black; 
     margin-left: 143px;
     margin-top: 20px;
     padding: 10px 20px 10px 20px;
-    color: white;
+    background: black;
     border: none;
+    color: white;
     outline: none;
 }
-
 .inp:focus {
-    box-shadow: 0px 0px 10px blue;
     background: #1b5288;
+    box-shadow: 0px 0px 10px blue;
 }
-
 .che {
     margin-left: 143px;
     margin-top: 10px;
 }
-
 .b1 {
-    color: white;
+    margin-left: 212px;
+    margin-top: 10px;
+    padding: 8px 20px 8px 20px;
     border-width: 2px 0;
     border-style: solid none;
     border-color: #317fc7;
     border-radius: 4px;
     background: #317fc7;
-    padding: 8px 20px 8px 20px;
+    color: white;
     cursor: pointer;
-    margin-left: 212px;
-    margin-top: 10px;
 }
-
 .f {
     margin-top: 10px;
 }
-
 .f a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
-
 .f, .facebook, .ou {
     text-align: center;
 }

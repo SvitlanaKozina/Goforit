@@ -2,14 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
-
 .greybox1 {
 	width: 7000px;
 	height: 3000px;
 	position: relative;
 	background: #D8D8D8;
 }
-
 .bluebox2 {
 	width: 1278px;
 	height: 1058px;
@@ -19,7 +17,6 @@
 	background: url('../img/back1.png');
 	box-shadow: 10px 10px 5px 0px  #999999;
 }
-
 .zero {
 	width: 998px;
 	height: 980px;
@@ -30,11 +27,9 @@
 		left: 145px;
     font-family: arial, sans-serif;
 	}
-	
 .shapka {
 	margin-top: 2px;
 }
-
 .s1 {
     float: right;
     padding-top: 20px;
@@ -44,7 +39,6 @@
     float: left;
     padding-left: 30px;
 }
-
 .s3 {
     clear: right;
     float: right;
@@ -58,19 +52,16 @@
     background: url("../img/foto1.jpg");
     background-size: cover;
 }
-
 .menu1 {
 	width: 100%;
 	background: #2E2E2E;
 	color: white;
 }
-
 .osnova {
     clear: both;
 	width: 998px;
     color: #2E2E2E;
 }
-
 .leftColumn {
     width: 20%;
     float: left;
@@ -78,14 +69,12 @@
     padding: 20px 20px 20000px 20px;
     margin-bottom: -20000px;
 }
-
 .centerColumn {
     float: left;
     background: #ffffff;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
 }
-
 .rightColumn {
 	width: 20%;
     float: right;
@@ -93,17 +82,14 @@
     padding: 20px 20px 20000px 20px;
     margin-bottom: -20000px;
 }
-
 h2 {
     padding: 0;
     margin: 0;
     text-align: center;
 }
-
 p {
     line-height: 30px;
 }
-
 ul {
     display: block;
     width: 100%;
@@ -128,7 +114,6 @@ ul.menu > li > a {
     background-color: #2E2E2E;
     text-decoration: none;
 }
-
 .tr:after {
   content: '';
   position: absolute;
@@ -139,7 +124,6 @@ ul.menu > li > a {
   border: 5px solid;
   border-color: white #2E2E2E #2E2E2E #2E2E2E;
 }
-
 ul.menu > li > a:hover {
     background-color: #2E2E2E;
 }
