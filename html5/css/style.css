@@ -2,22 +2,28 @@
     margin: auto;
     padding: 0;
 }
+@font-face {
+            font-family: 'Helvetica neue';
+            src: url('../fonts/helveticaneue-thin-webfont.eot');
+            src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+                 url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+                 url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 .box1 {
     height: 100%;
-    /*    height: 1064px;*/
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+    position: fixed;
     background: url('../img/Back.jpg');
     background-size: cover;
     font-family: 'Helvetica neue';
     color: white;
 }
-.box1 back {
-    width: 100%;
-    height: auto;
-}
 .menu1 {
-    width: 100%px;
+    width: 100%;
+    padding-left: 10%;
     background: #354d8b;
     line-height: 30px;
 }
@@ -73,7 +79,16 @@ li:nth-child(5):hover {
 .menu1 a {
     color: white;
 }
-.cad {
+.boxform {
+    width: 40%;
+    height: 85%;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+.inbform1 {
     height: 53px;
     margin-top: 10px;
     border-bottom: 2px solid white;
@@ -81,38 +96,24 @@ li:nth-child(5):hover {
     line-height: 53px;
     text-align: center;
 }
+.inbform2 {
+    width: 49%;
+}
 .facebook {
-    margin-top: 40px;
+    width: 100%;
+    margin-top: 4%;
 }
 .ou {
+    width: 100%;
     margin-top: 30px;
 }
-.boxform1 {
-    width: 40%;
+.boxinpchek {
     height: 50%;
-    position: absolute;
-    top: 20%;
-    left: centre;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 14px;
-}
-.boxform1_1 {
-    height: 50%;
-    margin-top: 10px;
-    margin-left: 50%;
-    margin-right: 50%;
-    position: relative;
-    overflow: hidden;
-}
-.boxform1_1_1 {
-    position: absolute;
-    margin: auto;
-    width: 50%;
-    }
+    width: 100%;}
 .inp {
     width: 100%;
     margin-top: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 5px 10px 5px;
     background: black;
     border: none;
     color: white;
@@ -123,11 +124,11 @@ li:nth-child(5):hover {
     box-shadow: 0px 0px 10px blue;
 }
 .che {
-    margin-left: 143px;
+    margin-left: 1%;
     margin-top: 10px;
 }
 .b1 {
-    margin-left: 200px;
+    margin-left: 22%;
     margin-top: 10px;
     padding: 8px 20px 8px 20px;
     border-width: 2px 0;
@@ -139,13 +140,13 @@ li:nth-child(5):hover {
     color: white;
     cursor: pointer;
 }
-.f {
+.inbform3 {
     margin-top: 10px;
 }
-.f a {
+.inbform3 a {
     color: white;
     text-decoration: none;
 }
-.f, .facebook, .ou {
+.inbform3, .facebook, .ou {
     text-align: center;
 }
