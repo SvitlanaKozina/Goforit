@@ -4,23 +4,31 @@
 var names = [];
 var n = 5;
 for(var i = 0; i < n; i++){
-  names[i] = prompt('Введите имя пользователя', '');
-}
+    names[i] = prompt('Введите имя пользователя', '');
+    };
+alert (names);
 console.log(names);
 
-//пользователь вводит свое имя
-var userName;
-userName = prompt('Введите имя пользователя', '');
-
 //Проверяем есть ли имя пользователя в массиве, приветствие или сообщение об ошибке
-var result = 0;
-for(i = 4; i>-1; i--) {
-if(userName == names[i]){
-  alert(userName + ', вы успешно вошли!')
-  result = 1}
-else {}
+
+function enterTo() {
+var userName;
+userName = prompt('Самый мудрый, успешный, спортивный пользователь, пожалуйста, введите Ваше имя!', '');
+for(i = 0; i<names.length; i++) {
+if((userName === null) || (userName === '')) {
+alert('К сожалению, все ушли на обед, приходите завтра.')
+return;
+}
+else if (userName === names[i]) {
+alert(userName + ', вот это да, вы успешно вошли!');
+return; 
+}
+else {
+alert('К сожалению, все ушли на обед, приходите завтра.')
+return;
+}   
+}
 };
-if(result == 0){
-  alert('К сожалению, вас нет в базе данных') }
-else {};
+
+enterTo();
 
