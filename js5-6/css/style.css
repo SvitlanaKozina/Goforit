@@ -1,0 +1,10 @@
+body {
+    margin-top: 16%;
+    font-size: 200%
+}
+#timer, p{
+    text-align: center
+}
+button {
+    font-size: 100%
+}
