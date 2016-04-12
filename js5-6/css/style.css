@@ -1,9 +1,14 @@
 body {
-    margin-top: 16%;
+    margin-top: 10%;
     font-size: 200%
 }
-#timer, p{
-    text-align: center
+#timer {
+    display: inline-block;
+    padding-left: 30%;
+}
+p {
+    display: inline-block;
+    padding-left: 39%;
 }
 button {
     font-size: 100%

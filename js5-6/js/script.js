@@ -39,16 +39,19 @@ return timePassed};
 
 function timeFormatter(timeInMilliseconds) {
 var time = new Date(timeInMilliseconds);
-var hours = Math.floor(time.getMinutes()/60).toString();
+var hours = time.getUTCHours().toString();
 var minutes = time.getMinutes().toString();
 var seconds = time.getSeconds().toString();
+var milliseconds = time.getMilliseconds().toString();
 if (hours.length < 2) {
 hours = '0' + hours};
 if (minutes.length < 2) {
 minutes = '0' + minutes};
 if (seconds.length < 2) {
 seconds = '0' + seconds};
-return hours + ' : ' + minutes + ' : ' + seconds};
+if (milliseconds.length < 3) {
+if (milliseconds.length < 2) {milliseconds = '00' + milliseconds} else {milliseconds = '0' + milliseconds}};
+return hours + ' : ' + minutes + ' : ' + seconds+ ' : ' + milliseconds};
 
 this.start = function() {
 if (!this.isOn) {
