@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JS 9-10</title>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="js/cusel.js"></script>
+		<script type="text/javascript" src="js/jScrollPane.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="css/cusel.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<div top>
+			<div class="wrap_jcarousel">
+				<div id="mycarousel" class="jcarousel-skin-tango" dir="rtl">
+					<ul class="ul_jcarousel">
+						<li><img src="img/img1.jpg" alt="img1"></li>
+						<li><img src="img/img2.jpg" alt="img2"></li>
+						<li><img src="img/img3.jpg" alt="img3"></li>
+						<li><img src="img/img4.jpg" alt="img4"></li>
+						<li><img src="img/img5.jpg" alt="img5"></li>
+					</ul>
+				</div>
+				<p class="jcarousel-pagination"></p>
+				<a class="jcarousel-prev" href="#">Назад</a>
+				<a class="jcarousel-next" href="#">Вперед</a>
+			</div>
+			<div class="myselect">
+				<form action="#">
+					<div class="lineForm">
+						<label>Красивые открытки</label><br>
+						<select class="sel" id="sel1" name="namesel1">
+							<option value="Открытка с днем" selected="selected">Сделайте выбор</option>
+							<option value="Открытка с днем">Открытка с ...</option>
+							<option value="Открытка женщине">Открытка женщине</option>
+							<option value="Открытка мужчине">Открытка мужчине</option>
+							<option value="Музыкальные открытки">Музыкальные открытки</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<h1>Открытки</h1>
+		<div class="checkjs">
+			<div class="lab"><input type="checkbox" class="niceCheck" id="ch1" tabindex="1"/><label for="ch1">Вариант1</label></div>
+			<div class="lab"><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2"/><label for="ch2">Вариант2</label></div>
+			<div class="lab"><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled"/><label for="ch3">Вариант3</label></div>
+		</div>
+		<div class="checkcss"><input type="checkbox" class="checkcss" id="chcss1" tabindex="1"/><label for="chcss1">Вариант1</label></div>
+		<div class="postals">
+			<ul class="menu_postals" id="main_menu">
+				<li><a href="">Старинные</a>
+					<ul class="sub1">
+						<li><a href="">Цветные</a></li>
+						<li><a href="">Черно-белые</a></li>    
+					</ul>
+				</li>
+				<li><a href="">Самые красивые</a>
+					<ul class="sub">
+						<li><a href="">Обычные</a>
+							<ul class="insub1">
+								<li><a href="">Вариант1</a></li>
+								<li><a href="">Вариант2</a></li>    
+							</ul>
+						</li>
+						<li><a href="">Анимированные</a>
+							<ul class="insub2">
+								<li><a href="">Вариант1</a></li>
+								<li><a href="">Вариант2</a></li>    
+							</ul>
+						</li>    
+					</ul>
+				</li>
+				<li><a href="">Сделать свою</a></li>
+			</ul> 
+		</div>
+	</body>
+</html>
