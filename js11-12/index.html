@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS 11-12</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="js/jq-mycarousel.js"></script>
+		<script src="js/tmpl.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+		<div class="carousel-arrow-left"><span>Влево</span></div>
+        <div class="carousel-hider">
+		<ul id="carousel-list">
+			<li class="carousel-element"><img src="img/img1.jpg"><p>Описание 1</p></li>
+			<li class="carousel-element"><img src="img/img2.jpg"><p>Описание 2</p></li>
+			<li class="carousel-element"><img src="img/img3.jpg"><p>Описание 3</p></li>
+			<li class="carousel-element"><img src="img/img4.jpg"><p>Описание 4</p></li>
+			<li class="carousel-element"><img src="img/img5.jpg"><p>Описание 5</p></li>
+		</ul>
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+		<div class="clear"></div>
+		<script type="text/template" id="test">
+			<h1><%= data.title %></h1>
+			<p><%= data.slogan %></p>
+			<p><%= data.question %></p>
+			<p><%= data.answer1 %></p>
+			<p><%= data.answer2 %></p>
+			<p><%= data.answer3 %></p>
+			<p><%= data.tel %></p>
+			<p><%= data.vk %></p>
+		</script>
+    </body>
+</html>
