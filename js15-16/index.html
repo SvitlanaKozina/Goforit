@@ -4,49 +4,14 @@
         <meta charset="UTF-8">
         <title>JS 15-16</title>
         <link rel="stylesheet" href="css/style.css">
-<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
-        <script src="js/script.js" defer></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
+    <div class="mainbox">
     
-<!--    	Поиск только по сайту Википедии https://ru.wikipedia.org/-->
+<!--    Вариант №1: скачиваем с сайта google пользовательский поиск (указываем в настройках google искать везде или на конкретном сайте):-->
 <!--
-    	<script>
-  (function() {
-    var cx = '008667953381420632425:spp07omiirs';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
--->
-<!--   Второй вариант поиска-->
-   
-<!--
-   <script src="http://www.google.com/jsapi?key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg"
-        type="text/javascript"></script>
-    <script type="text/javascript">
-      google.load("search", "1");
-
-      // Эта функция будет вызвана сразу после загрузки страницы
-      function initialize() {
-        var searchControl = new google.search.SearchControl();
-        searchControl.addSearcher(new google.search.WebSearch());
-		searchControl.addSearcher(new GwebSearch());
-        searchControl.draw(document.getElementById("searchcontrol"));
-      }
-      google.setOnLoadCallback(initialize);
-    </script>
-
-    <div id="searchcontrol"></div>
--->
-  
-<!--   Третий вариант поиска-->
-  
   <script>
   (function() {
     var cx = '008667953381420632425:3yalee7uclk';
@@ -59,7 +24,20 @@
   })();
 </script>
 <gcse:search></gcse:search>
-   
-   
-    </body>
+-->
+<!--  Конец варианта №1-->
+  
+   <!--   Вариант №2. Ищем картинки в фотобанке:-->
+   <div class="wrapper">
+   		<form action="#" class="forma">
+			<input class="goinput" type="text" id="req" placeholder="Search foto on pixabay.com">
+			<input class="gobut" type="submit" id="search" value="Поиск">
+		  </form>
+	  </div>
+	  
+		<div class="foto">		  
+		</div>
+		
+		</div>
+   </body>
 </html>

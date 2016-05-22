@@ -41,17 +41,52 @@ for (var key in student1) {
   console.log( "student1: " + "ключ: " + key + "," + " значение: " + student1[key]);
 };
 student1.watch();	
+ 
 
-//$.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0?&q=PHP&callback=GoogleCallback&context=?",
-//function(data){
-//    var ul = document.createElement("ul");
-//    $.each(data.results, function(i, val){
-//            var li = document.createElement("li");
-//            li.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+"</a> - "+val.content;                            
-//            ul.appendChild(li);
-//    });
-//    $('body').html(ul);
-//});	
-	
-	
+//Делаем поиск фото на https://pixabay.com/:  
+
+  var searchThis = 'dog';
+ 	var API_KEY = '2614678-ea63183beb77f4f55524b94e0';
+  var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(searchThis)+"&callback=?";
+    
+$.ajax({
+  url: URL,
+  type: 'POST',
+  dataType: "jsonp",
+  success: function(data) {
+    var ul = document.createElement("ul");
+    $.each(data.hits, function(i, val){
+           var li = document.createElement("li");
+            var inner = '<a href="'+val.pageURL+'" title="'+val.Url+'" target="_blank">'+'<img src="'+ val.previewURL+'" alt="'+searchThis+'" >'+"</a>";
+            
+            li.innerHTML = inner;                               
+            ul.appendChild(li);
+    });
+    $('.foto').append(ul);},
+  
+//  error: function() {alert("Ошибка выполнения")},
+//  complete: function() {alert("Завершение выполнения") }  
+});
+
+$('.forma').submit(function(){
+ $('.foto').empty();
+ var searchThis = $("#req").val();
+var API_KEY = '2614678-ea63183beb77f4f55524b94e0';
+var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(searchThis)+"&callback=?";  
+ $.ajax({
+  url: URL,
+  type: 'POST',
+  dataType: "jsonp",
+  success: function(data) {
+    var ul = document.createElement("ul");
+    $.each(data.hits, function(i, val){
+           var li = document.createElement("li");
+            var inner = '<a href="'+val.pageURL+'" title="'+val.Url+'" target="_blank">'+'<img src="'+ val.previewURL+'" alt="'+searchThis+'" >'+"</a>";
+            
+            li.innerHTML = inner;                               
+            ul.appendChild(li);
+    });
+    $('.foto').append(ul);},
+});});
+  
 }) 
