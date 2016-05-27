@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS 23-24</title>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script data-main='js/app' src="js/requirejs.js"></script>
+</head>
+<body>
+  <div class="main">
+    <img src="img/todo.jpg" alt="">
+  </div>
+  <div id="overlay">
+     <div class="top">
+      <h1 id="title">Что нужно сделать:</h1>
+      <form action="#" class="contr_for">
+      <input type="text" id="ttt" class="inp_text" placeholder="Напишите здесь задачу" autocomplete="off">
+      <input type="submit" class="inp_but_add" value="Добавить">
+      </form>
+      <input type="button" class="res" value="Удалить список">
+      <input type="button" class="inp_but_load" value="Загрузить историю">
+    </div>
+    <div class="cl"></div>
+      <script type="text/tmpl" id="mytest">
+        <ul class="tasks">
+             <% for ( var t= 0; t< obj.arrtasks.length; t++ ) { %>
+              <li class="text_task" id="<%= [t] %>"><input type="text" class="d_n_b_s" value="<%= obj.arrtasks[t] %>"><span class="V">V</span><span class="del">X</span><span class="ok">Ok!</span>
+                </li>	
+              <% } %> 
+        </ul> 
+        </script>
+     <div class="past">   
+    </div>
+  </div>
+</body>
+</html>
