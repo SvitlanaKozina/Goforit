@@ -331,7 +331,7 @@ margin-top: 9px;
 display: inline-block;
 float: right;
 padding-top: 7px;
-padding-right: -10px;  
+margin-right: -10px;  
 text-decoration: none;
 color: #fff;
 font-size: 0.99em;
@@ -438,7 +438,6 @@ text-decoration: none;
 font-weight: bold;
 color: #454545;
 font-family: 'Arial', sans-serif;
-font-family: 0.5em;
 overflow: hidden;
 padding-left: 25%;
 }
@@ -967,7 +966,7 @@ overflow: hidden;
 display: inline-block;
 float: right;
 padding-top: 11px;
-padding-right: -5px;  
+margin-right: -5px;  
 text-decoration: none;
 color: #fff;
 font-size: 0.99em;
@@ -1069,7 +1068,6 @@ text-decoration: none;
 font-weight: bold;
 color: #454545;
 font-family: 'Arial', sans-serif;
-font-family: 0.5em;
 overflow: hidden;
 padding-left: 16.5%;
 }
@@ -1654,7 +1652,6 @@ text-decoration: none;
 font-weight: bold;
 color: #454545;
 font-family: 'Arial', sans-serif;
-font-family: 0.5em;
 overflow: hidden;
 }
   
@@ -1880,7 +1877,7 @@ background-size: cover;
 .pingbull {
 width: 33%;
 float: left;
-padding-top: -1px;
+margin-top: -1px;
 font-size: 1em;
 font-weight: normal;
 }
@@ -2394,5 +2391,3 @@ font-size: 1.1em;
 }
 } 
 /*End min-width: 960px*/
-
-}}}}
