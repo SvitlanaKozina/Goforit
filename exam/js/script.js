@@ -95,24 +95,24 @@ $(function(){
     $('.grid').empty();
     searchButThis = $("#req").val().toUpperCase();
     API_KEY = '2614678-ea63183beb77f4f55524b94e0';
-    URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(searchButThis)+"&orientation=horizontal"+"&image_type=photo"+"&per_page=50"+"&callback=?";  
+    URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(searchButThis)+"&orientation=horizontal"+"&image_type=photo"+"&per_page=7"+"&callback=?";  
     $.ajax({
       url: URL,
       type: 'POST',
       dataType: "jsonp",
       success: function(data) {
-        myArUrl=[];        
+        myArUrl=[];
+        
         $.each(data.hits, function(i, val){
           myArUrl.push(val.webformatURL); 
         });
+         
         for (b=0; b<7; b++) {
           div = document.createElement("div");
           if (b===4 || b===5 ){
             div.classList.add("myitem", "persent-size", "width2", "numb"+b)}
           else {div.classList.add("myitem", "persent-size", "numb"+b)};
-          rand = Math.floor(Math.random() * myArUrl.length);
-          urlRand = myArUrl[rand];
-          inner = "<div>"+'<a href="'+urlRand+'"  target="_blank">'+'<img src="'+ urlRand+'" alt="'+searchButThis+'" >'+"</a>"+'<span>'+ searchButThis +'</span>'+"</div>";
+          inner = "<div>"+'<a href="'+myArUrl[b]+'"  target="_blank">'+'<img src="'+ myArUrl[b]+'" alt="'+searchButThis+'" >'+"</a>"+'<span>'+ searchButThis +'</span>'+"</div>";
           div.innerHTML = inner;
           $('.grid').append(div);
         }
