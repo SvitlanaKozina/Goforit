@@ -28,11 +28,11 @@ $(function(){
         }},
       autoplayHoverPause:true,
       loop:true,
-      margin:0,
+      margin:10,
       nav:false,
-      autoplay:false,
+      autoplay:true,
       touchDrag: false,
-      mouseDrag: false,
+      mouseDrag: true,
       smartSpeed:1000,
       autoplayTimeout:2000
     });    
