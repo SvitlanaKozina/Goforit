@@ -81,7 +81,7 @@ border-radius: 17px;
 padding: 6px 16px 6px 16px;
 font-size: 1.1em;
 position: relative;
-behavior: url(PIE.htc);
+behavior: url(pie/PIE.htc);
 }
 
 .call {
@@ -113,13 +113,8 @@ font-weight: 500;
 word-spacing: 1.5px;
 letter-spacing: 0.41px;
 position: relative;
-behavior: url(PIE.htc);
+behavior: url(pie/PIE.htc);
 }
-
-//.content {
-//  // height: 2500px;
-//  
-//}
 
 .howWorks {
 height: 620px;
@@ -146,7 +141,7 @@ color: white;
 }
 
 .howWorks__first {
-width: 98%;
+width: 300px;
 height: 400px;
 margin-right: (20px*100%)/940px;
 padding-top: 150px;
@@ -155,12 +150,12 @@ padding-right: (20px*100%)/940px;
 background: url("../../img/bg/step1.jpg") no-repeat;
 background-size: cover;
 overflow: hidden;
-border-radius: 5px;
-behavior: url(PIE.htc);
+border-radius: 5px;  
+behavior: url(pie/PIE.htc);
 }
 
 .howWorks__second {
-width: 98%;
+width: 300px;
 height: 400px;
 margin-right: (20px*100%)/940px;
 padding-top: 150px;
@@ -169,11 +164,12 @@ padding-right: (20px*100%)/940px;
 background: url("../../img/bg/step2.jpg") no-repeat;
 background-size: cover;
 overflow: hidden;
-border-radius: 5px;
+border-radius: 5px;    
+behavior: url(pie/PIE.htc);  
 }
 
 .howWorks__third {
-width: 98%;
+width: 300px;
 height: 400px;
 padding-top: 150px;
 padding-left: (20px*100%)/940px;
@@ -181,7 +177,8 @@ padding-right: (20px*100%)/940px;
 background: url("../../img/bg/step3.jpg") no-repeat;
 background-size: cover;
 overflow: hidden;
-border-radius: 5px;
+border-radius: 5px;  
+behavior: url(pie/PIE.htc);  
 }
 
 .arrows {
@@ -198,16 +195,18 @@ width: auto;
 height: auto;
 }
 
-.step {
+a.step {
 display: inline-block;
 padding: 5px 11px 5px 11px;
 background: #ff4e50;
-border-radius: 15px;
 color: white;
 font-size: 0.7em;
 font-weight: 300;
 letter-spacing: 3px;
 margin-bottom: 15px;
+border-radius: 15px;
+position: relative;
+behavior: url(pie/PIE.htc);  
 }
 
 .step-second {
@@ -305,7 +304,7 @@ font-size: 1.1em;
 font-weight: 700;
 color: #ff4e50;
 position: relative;
-behavior: url(PIE.htc);
+behavior: url(pie/PIE.htc);
 }
 
 .ideas {
@@ -343,10 +342,8 @@ margin: 0.5%;
 border-radius: 5px;
 text-align: center;
 vertical-align: middle;
-background: #ff4e50;
 overflow: hidden;
 position: relative;
-behavior: url(PIE.htc);
 div {
 span {
 display: inline-block;
@@ -375,6 +372,8 @@ img {
 width: 100%;
 height: 100%;
 z-index: 8;
+border-radius: 5px;
+behavior: url(pie/PIE.htc);  
 }
 }
 }
@@ -442,7 +441,7 @@ padding: 13px 5px;
 color: white;
 font-size: 1.2em;
 position: relative;
-behavior: url(PIE.htc);
+behavior: url(pie/PIE.htc);
 }
 
 footer {

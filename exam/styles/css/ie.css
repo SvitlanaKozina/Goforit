@@ -68,7 +68,7 @@ header {
   padding: 6px 16px 6px 16px;
   font-size: 1.1em;
   position: relative;
-  behavior: url(PIE.htc); }
+  behavior: url(pie/PIE.htc); }
 
 .call {
   text-align: center;
@@ -96,7 +96,7 @@ header {
   word-spacing: 1.5px;
   letter-spacing: 0.41px;
   position: relative;
-  behavior: url(PIE.htc); }
+  behavior: url(pie/PIE.htc); }
 
 .howWorks {
   height: 620px;
@@ -118,7 +118,7 @@ header {
   color: white; }
 
 .howWorks__first {
-  width: 98%;
+  width: 300px;
   height: 400px;
   margin-right: 2.12766%;
   padding-top: 150px;
@@ -128,10 +128,10 @@ header {
   background-size: cover;
   overflow: hidden;
   border-radius: 5px;
-  behavior: url(PIE.htc); }
+  behavior: url(pie/PIE.htc); }
 
 .howWorks__second {
-  width: 98%;
+  width: 300px;
   height: 400px;
   margin-right: 2.12766%;
   padding-top: 150px;
@@ -140,10 +140,11 @@ header {
   background: url("../../img/bg/step2.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
-  border-radius: 5px; }
+  border-radius: 5px;
+  behavior: url(pie/PIE.htc); }
 
 .howWorks__third {
-  width: 98%;
+  width: 300px;
   height: 400px;
   padding-top: 150px;
   padding-left: 2.12766%;
@@ -151,7 +152,8 @@ header {
   background: url("../../img/bg/step3.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
-  border-radius: 5px; }
+  border-radius: 5px;
+  behavior: url(pie/PIE.htc); }
 
 .arrows {
   padding-bottom: 20px; }
@@ -164,16 +166,18 @@ header {
   width: auto;
   height: auto; }
 
-.step {
+a.step {
   display: inline-block;
   padding: 5px 11px 5px 11px;
   background: #ff4e50;
-  border-radius: 15px;
   color: white;
   font-size: 0.7em;
   font-weight: 300;
   letter-spacing: 3px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  border-radius: 15px;
+  position: relative;
+  behavior: url(pie/PIE.htc); }
 
 .step-second {
   display: inline-block;
@@ -254,7 +258,7 @@ header {
   font-weight: 700;
   color: #ff4e50;
   position: relative;
-  behavior: url(PIE.htc); }
+  behavior: url(pie/PIE.htc); }
 
 .ideas {
   width: 100%; }
@@ -286,10 +290,8 @@ header {
   border-radius: 5px;
   text-align: center;
   vertical-align: middle;
-  background: #ff4e50;
   overflow: hidden;
-  position: relative;
-  behavior: url(PIE.htc); }
+  position: relative; }
   .myitem div span {
     display: inline-block;
     position: absolute;
@@ -315,7 +317,9 @@ header {
     .myitem div a img {
       width: 100%;
       height: 100%;
-      z-index: 8; }
+      z-index: 8;
+      border-radius: 5px;
+      behavior: url(pie/PIE.htc); }
 
 .width2 {
   width: 64.89362%; }
@@ -372,7 +376,7 @@ header {
   color: white;
   font-size: 1.2em;
   position: relative;
-  behavior: url(PIE.htc); }
+  behavior: url(pie/PIE.htc); }
 
 footer {
   height: 196px;
